@@ -1,0 +1,15 @@
+package files to update:
+/src/<file.py>
+README.md
+setup.py
+
+
+
+
+build:
+
+python setup.py bdist_wheel sdist
+
+upload to pypi:
+
+twine upload dist/*
