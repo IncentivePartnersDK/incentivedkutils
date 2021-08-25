@@ -5,7 +5,7 @@ Dette er en pakke med utilities bygget for Incentive DK
 
 Run the following to install 
 ```
-python -m pip install incentivedkutils
+python -m pip install git+https://github.com/IncentivePartnersDK/incentivedkutils.git
 ```
 
 ## Usage
