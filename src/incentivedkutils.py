@@ -29,6 +29,10 @@ def from_pickle(pickle_filename):
         obj = pickle.load(f)
     return obj
 
+def remove_duplicate_dicts(list_of_dicts):
+    list_tuples = list(set([tuple([(k, v) for k, v in obs.items()]) for obs in list_of_dicts]))
+    return [dict(obs) for obs in list_tuples]
+
 
 
 def load_csv(file, delimiter=','):
